@@ -1,2 +1,2 @@
 # Plinko
-Plonko Game
+Plonko Game.
