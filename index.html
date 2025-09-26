@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <title>Plinko Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 style="text-align:center; color:#eee; margin-top:10px;">🎯 Plinko Game</h1>
+
+  <button id="connectWallet" style="margin: 10px;">🔗 connect wallet</button>
+
+  <div id="walletInfoBox" style="padding: 10px; border: 1px solid #ccc; margin: 10px; background: #1e1e1e; color: #eee;">
+    <h3>Wallet Info</h3>
+    <p id="walletAddress">Wallet : </p>
+    <p id="walletWins">Wins :</P>
+  </div>
+
+  <div class="container">
+    <!-- سمت چپ: کنترل‌ها -->
+    <div class="sidebar">
+      <div>
+        <h2>🎮 Game</h2>
+        <div class="input-group">
+          <label>Bet Amount:</label>
+          <input type="number" id="amountInput">
+        </div>
+
+        <div class="btn-group">
+          <button id="sendZTC">📤 Deposit ZTC</button>
+          <button id="dropBall">🎲 Start Game</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- سمت راست: فضای بازی -->
+    <div class="game-area">
+      <canvas id="plinkoCanvas" width="600" height="600"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
