@@ -10,6 +10,7 @@ const slotColors = [
   "#8e44ad", "#16a085", "#7f8c8d", "#7f8c8d", "#16a085",
   "#8e44ad", "#2980b9", "#27ae60", "#f1c40f", "#e67e22", "#f39c12"
 ];
+
 const slotWidth = 30;
 let ball = null;
 let currentWallet = null;
@@ -21,7 +22,7 @@ function createPegs() {
 
   for (let row = 1; row < rows; row++) {
     const pegsInRow = row + 1;
-    const offsetX = (canvas.width - pegsInRow * spacingX) / 2;
+    const offsetX = (canvas.width - pegsInRow * spacingX ) / 2;
     const rowPegs = [];
 
     for (let i = 0; i < pegsInRow; i++) {
@@ -289,4 +290,5 @@ function getTransferData(to, amount) {
   const paddedTo = to.toLowerCase().replace("0x", "").padStart(64, "0");
   const paddedAmount = BigInt(amount).toString(16).padStart(64, "0");
   return "0x" + methodId + paddedTo + paddedAmount;
+
 }
