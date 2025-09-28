@@ -5,6 +5,7 @@ body {
   color: #eee;
 }
 
+
 .container {
   display: flex;
   height: 100vh;
@@ -84,4 +85,5 @@ body {
 canvas {
   background-color: #1e1e1e;
   border: 2px solid #444;
+
 }
